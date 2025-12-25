@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+    const navigate = useNavigate();
   return (
     <section
       style={{
@@ -120,6 +121,7 @@ const Home = () => {
               e.target.style.boxShadow =
                 "0 12px 40px rgba(56,189,248,0.35)";
             }}
+            onClick={() => navigate("/about")}
           >
             Explore More
           </button>

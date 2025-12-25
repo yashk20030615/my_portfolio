@@ -6,8 +6,8 @@ import Loader from "./Components/Loader";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 // import Projects from "./Pages/Projects";
-// import Skills from "./Pages/Skills";
-// import Contact from "./Pages/Contact";
+import Skills from "./Pages/Skill";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,8 +44,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           {/* Future pages */}
           {/* <Route path="/projects" element={<Projects />} /> */}
-          {/* <Route path="/skills" element={<Skills />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
