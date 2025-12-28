@@ -10,7 +10,7 @@ import nodeLogo from "../assets/node.png";
 import expressLogo from "../assets/express.png";
 import mongoLogo from "../assets/mongo.png";
 import gitLogo from "../assets/git.jpg";
-
+import mysql from "../assets/mysql.png";
 const skills = [
   { name: "C Programming", level: 75, logo: cLogo },
   { name: "Java", level: 70, logo: javaLogo },
@@ -22,6 +22,7 @@ const skills = [
   { name: "Express.js", level: 70, logo: expressLogo },
   { name: "MongoDB", level: 65, logo: mongoLogo },
   { name: "Git & GitHub", level: 75, logo: gitLogo },
+  { name: "MySQL" , level:80 , logo:mysql},
 ];
 
 const Skills = () => {
@@ -62,8 +63,10 @@ const Skills = () => {
             lineHeight: 1.7,
           }}
         >
-          My core technical skillset developed through academics, projects,
-          and continuous learning.
+          My core technical skill set has been developed through a strong academic
+          foundation, hands-on project experience, and a commitment to continuous
+          learning, enabling me to build efficient, scalable, and user-focused
+          applications.
         </p>
 
         {/* Skills Grid */}

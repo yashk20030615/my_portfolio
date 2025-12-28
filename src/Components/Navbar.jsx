@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import resumePDF from "../assets/Resume -Yash_Kumar_Gandhir.pdf";
 
 const Navbar = () => {
   const location = useLocation();
@@ -14,7 +15,6 @@ const Navbar = () => {
     padding: "6px 0",
     cursor: "pointer",
     borderBottom: isActive ? "2px solid #38bdf8" : "none",
-    transition: "border 0.3s",
   });
 
   const navItems = [
@@ -57,11 +57,11 @@ const Navbar = () => {
             color: "#f8fafc",
           }}
         >
-          Yash Kumar<span style={{ color: "#38bdf8" }}>🌟</span>
+          Yash Kumar <span style={{ color: "#38bdf8" }}>🌟</span>
         </div>
 
-        {/* Links */}
-        <div style={{ display: "flex", gap: "36px", flexWrap: "wrap" }}>
+        {/* Nav Links + Resume */}
+        <div style={{ display: "flex", gap: "36px", alignItems: "center" }}>
           {navItems.map((item) => {
             const isActive = location.pathname === item.path;
             return (
@@ -74,7 +74,7 @@ const Navbar = () => {
               >
                 {item.name}
 
-                {/* Underline hover effect */}
+                {/* Hover underline */}
                 <span
                   style={{
                     position: "absolute",
@@ -92,6 +92,33 @@ const Navbar = () => {
               </Link>
             );
           })}
+
+          {/* Resume Button */}
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#38bdf8",
+              textDecoration: "none",
+              fontSize: "15px",
+              fontWeight: 600,
+              padding: "8px 16px",
+              border: "1px solid #38bdf8",
+              borderRadius: "6px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.background = "#38bdf8";
+              e.target.style.color = "#020617";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.background = "transparent";
+              e.target.style.color = "#38bdf8";
+            }}
+          >
+            Resume
+          </a>
         </div>
       </div>
     </nav>

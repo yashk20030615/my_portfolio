@@ -128,9 +128,12 @@ const About = () => {
               marginBottom: "24px",
               textAlign: "center",
               color: "#cbd5f5",
+              lineHeight: "1.7",
+              fontSize: "1rem",
             }}
           >
-            My family has 4 members and we belong to a middle-class family.
+            I come from a close-knit family of four members, where values like hard work, discipline, respect, and mutual support have always been deeply rooted. My family has played a vital role in shaping my personality, encouraging me to stay focused on my education and career goals. Their constant motivation and guidance have helped me grow not only academically but also as a responsible and confident individual.
+
           </p>
 
           {/* Grid container for members */}
@@ -154,7 +157,7 @@ const About = () => {
             >
               <h3 style={{ color: "#38bdf8", fontWeight: 600 }}>Father</h3>
               <p style={{ fontWeight: 700 }}>Mr. Sanjeev Kumar</p>
-              <p>Businessman</p>
+              <p><strong>Occupation :</strong> Businessman</p>
               <p>DOB: 09/06/1976</p>
               <p>Father: Lt. Jeevan Dass Gandhir</p>
               <p>Mother: Lt. Bhagwanti Gandhir</p>
@@ -173,7 +176,7 @@ const About = () => {
             >
               <h3 style={{ color: "#38bdf8", fontWeight: 600 }}>Mother</h3>
               <p style={{ fontWeight: 700 }}>Mrs. Rajni Gandhir</p>
-              <p>Home Maker</p>
+              <p><strong>Occupation : </strong>Home Maker</p>
               <p>DOB: 23/04/1981</p>
               <p>Father: Shri Gobind Lal Bareja</p>
               <p>Mother: Shrimati Praveen Bareja</p>
@@ -192,6 +195,7 @@ const About = () => {
             >
               <h3 style={{ color: "#38bdf8", fontWeight: 600 }}>Younger Sister</h3>
               <p style={{ fontWeight: 700 }}>Bhumika</p>
+              <p><strong>Occupation : </strong> Student </p> 
               <p>Currently pursuing Bachelor's in Interior Designing</p>
               <p>DOB: 07/08/2006</p>
             </motion.div>
@@ -209,6 +213,7 @@ const About = () => {
             >
               <h3 style={{ color: "#38bdf8", fontWeight: 600 }}>Myself</h3>
               <p style={{ fontWeight: 700 }}>Yash Kumar Gandhir</p>
+              <p><strong>Occupation : </strong> Student </p> 
               <p>Currently pursuing Master's in Computer Application</p>
               <p>DOB: 15/06/2003</p>
             </motion.div>
@@ -238,7 +243,7 @@ const About = () => {
               fontWeight: 700,
               color: "#38bdf8",
               textAlign: "center",
-              marginBottom: "40px",
+              marginBottom: "1px",
               position: "relative",
               zIndex: 2,
             }}
@@ -246,7 +251,7 @@ const About = () => {
             Education
           </h2>
 
-          {/* Horizontal line */}
+          {/* Horizontal line
           <div
             style={{
               position: "absolute",
@@ -258,7 +263,25 @@ const About = () => {
               opacity: 0.2,
               zIndex: 1,
             }}
-          />
+          /> */}
+          <p
+            style={{
+            textAlign: "center",
+            color: "#cbd5f5",
+            maxWidth: "850px",
+            margin: "0 auto 30px",
+            lineHeight: "1.7",
+            fontSize: "1rem",
+          }}>
+          My educational journey reflects a consistent commitment to learning, growth,
+          and self-improvement. From building a strong academic foundation during my
+          schooling years to pursuing higher education in commerce and computer
+          applications, each phase has contributed significantly to my analytical
+          thinking, problem-solving abilities, and technical expertise. This journey
+          has helped me develop a balanced combination of theoretical knowledge and
+          practical skills, preparing me for real-world challenges in the field of
+          technology.
+        </p>
 
           {/* Schooling */}
           <EducationCard
@@ -267,7 +290,7 @@ const About = () => {
               "LKG – 12th: St Mary's Convent Sr. Sec. School, Panipat",
               "CBSE School",
               "10th Passout: March 2019 | Marks: 70%",
-              "11th & 12th: Commerce with Information Practices",
+              "11th & 12th: Commerce with Information Practices(Computers)",
               "12th Passout: March 2021 | Marks: 91%",
             ]}
             image={school}
