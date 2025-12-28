@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import todojs from "../assets/TodoList--Js.png";
+import todojs from "../assets/TodoList--JS.png";
 import todoreact from "../assets/TodoList---React.png";
 import blabla from "../assets/BlablacarClone.png";
 const Projects = () => {
