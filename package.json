@@ -6,7 +6,7 @@
   "homepage": "https://yashk20030615.github.io/my_portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "vite build",
