@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import todojs from "../assets/TodoList--JS.png";
 import todoreact from "../assets/TodoList---React.png";
 import blabla from "../assets/BlablacarClone.png";
+import quickcart from "../assets/quickcart.png";
 const Projects = () => {
   const handleRedirect = async(url)=>{
     try{
@@ -38,7 +39,7 @@ const Projects = () => {
         {/* ================= PROJECT 1 ================= */}
         <ProjectCard
           title="To-Do List (JavaScript)"
-          technologies="HTML, CSS, JavaScript"
+          technologies="HTML, CSS, JavaScript ,DOM Manipulation"
           description="A simple and interactive To-Do List application that allows users to add, delete and manage daily tasks efficiently. This project focuses on DOM manipulation, event handling and clean UI."
           image={todojs}
           liveLink="https://yashk20030615.github.io/To-Do-List---Js/"
@@ -52,8 +53,8 @@ const Projects = () => {
           technologies="React, Vite"
           description="A React-based To-Do List application with component-based architecture and state management. This project demonstrates React hooks, reusable components and fast build using Vite."
           image={todoreact}
-          liveLink="https://your-portfolio-live-link.com"
-          codeLink="https://github.com/yashk20030615/To-Do-List---React.git"
+          liveLink="https://to-do-list-react-yash.netlify.app/"
+          codeLink="https://github.com/yashk20030615/To-Do-List-React.git"
           handleRedirect={handleRedirect}
         />
         {/*==================PROJECT 3====================*/}
@@ -69,11 +70,11 @@ const Projects = () => {
           {/*=================PROJECT 4=====================*/}
           <ProjectCard
             title="QuickCart"
-            technologies="React,Redux"
-            description=""
-            image={blabla}
-            liveLink=""
-            codeLink=""
+            technologies="React.js, Redux Toolkit, Javascript, CSS, Vite, Git, GitHub & Netlify "
+            description="QuickCart is a React-based e-commerce application with Redux state management, featuring product listing, cart functionality, and real-time price updates. The project is built using Vite and deployed on Netlify."
+            image={quickcart}
+            liveLink="https://quickcart-yash.netlify.app/home"
+            codeLink="https://github.com/yashk20030615/QuickCart.git"
             handleRedirect={handleRedirect}
             />
 
