@@ -83,7 +83,7 @@ const Projects = () => {
             technologies="React.js, Redux Toolkit, Javascript, CSS, Vite, Git, GitHub & Netlify "
             description="QuickCart is a React-based e-commerce application with Redux state management, featuring product listing, cart functionality, and real-time price updates. The project is built using Vite and deployed on Netlify."
             image={quickcart}
-            liveLink="https://quickcart-yash.netlify.app/home"
+            liveLink="https://quickcart-yash.netlify.app/"
             codeLink="https://github.com/yashk20030615/QuickCart.git"
             handleRedirect={handleRedirect}
             />
