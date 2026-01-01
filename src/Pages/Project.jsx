@@ -3,6 +3,7 @@ import todojs from "../assets/TodoList--JS.png";
 import todoreact from "../assets/TodoList---React.png";
 import blabla from "../assets/BlablacarClone.png";
 import quickcart from "../assets/quickcart.png";
+import loginsignup from "../assets/loginsignup.png";
 const Projects = () => {
   const handleRedirect = async(url)=>{
     try{
@@ -35,6 +36,15 @@ const Projects = () => {
         >
           Projects
         </h1>
+
+        <ProjectCard 
+          title="Login-Signup"
+          technologies="HTML ,CSS & Javascrit"
+          description="This project is a responsive Login and Signup system developed using HTML, CSS, and JavaScript. It includes a user-friendly interface with smooth hover effects, input validation, and interactive UI components to enhance user experience. The project focuses on clean design, usability, and front-end form handling."
+          image={loginsignup}
+          liveLink="https://yashk20030615.github.io/Login-Signup/"
+          codeLink="https://github.com/yashk20030615/Login-Signup.git"
+          handleRedirect={handleRedirect}/>
 
         {/* ================= PROJECT 1 ================= */}
         <ProjectCard
