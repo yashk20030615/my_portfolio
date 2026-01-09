@@ -81,8 +81,8 @@ const Home = () => {
             lineHeight: 1.7,
           }}
         >
-          I build modern, scalable and visually refined web applications using
-          React, Node.js, Express.js and MongoDB.
+        I design and develop modern, scalable web applications using the MERN stack, combining clean code practices, performance optimization, and thoughtful UI/UX to deliver reliable and impactful digital experiences.
+
         </motion.p>
 
         {/* Single Explore More button */}

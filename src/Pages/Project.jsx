@@ -4,6 +4,7 @@ import todoreact from "../assets/TodoList---React.png";
 import blabla from "../assets/BlablacarClone.png";
 import quickcart from "../assets/quickcart.png";
 import loginsignup from "../assets/loginsignup.png";
+import loginsignupmern from "../assets/loginsignupmern.png";
 const Projects = () => {
   const handleRedirect = async(url)=>{
     try{
@@ -39,7 +40,7 @@ const Projects = () => {
 
         <ProjectCard 
           title="Login-Signup"
-          technologies="HTML ,CSS & Javascrit"
+          technologies="HTML ,CSS & Javascript"
           description="This project is a responsive Login and Signup system developed using HTML, CSS, and JavaScript. It includes a user-friendly interface with smooth hover effects, input validation, and interactive UI components to enhance user experience. The project focuses on clean design, usability, and front-end form handling."
           image={loginsignup}
           liveLink="https://yashk20030615.github.io/Login-Signup/"
@@ -68,7 +69,7 @@ const Projects = () => {
           handleRedirect={handleRedirect}
         />
         {/*==================PROJECT 3====================*/}
-        <ProjectCard 
+        {/* <ProjectCard 
           title="Go Ride(Blablacar Clone)"
           technologies="React,Redux,NodeJS,ExpressJS & MongoDB"
           description="GoRIde is "
@@ -76,7 +77,7 @@ const Projects = () => {
           liveLink=""
           codeLink=""
           handleRedirect={handleRedirect}
-          />
+          /> */}
           {/*=================PROJECT 4=====================*/}
           <ProjectCard
             title="QuickCart"
@@ -87,7 +88,15 @@ const Projects = () => {
             codeLink="https://github.com/yashk20030615/QuickCart.git"
             handleRedirect={handleRedirect}
             />
-
+          <ProjectCard 
+            title="Login-Signup (MERN)"
+            technologies="React.js, Express.js, Node.js & Mongo.db "
+            description="Developed a full-stack MERN authentication system implementing secure user signup and login using JWT (JSON Web Token) authentication. The application uses token-based authorization to protect routes and manage user sessions. The React frontend is deployed on Vercel, while the Node.js and Express backend with MongoDB is hosted on Render, following real-world production deployment practices."
+            image={loginsignupmern}
+            liveLink="https://login-signup-mern-b3tn3p1td-yash-kumar-gandhirs-projects.vercel.app/"
+            codeLink="https://github.com/yashk20030615/Login-Signup-Mern.git"
+            handleRedirect={handleRedirect}
+            />
       </div>
     </section>
   );
