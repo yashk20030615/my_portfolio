@@ -5,6 +5,7 @@ import blabla from "../assets/BlablacarClone.png";
 import quickcart from "../assets/quickcart.png";
 import loginsignup from "../assets/loginsignup.png";
 import loginsignupmern from "../assets/loginsignupmern.png";
+import counter from "../assets/counter.png";
 const Projects = () => {
   const handleRedirect = async(url)=>{
     try{
@@ -78,6 +79,14 @@ const Projects = () => {
           codeLink=""
           handleRedirect={handleRedirect}
           /> */}
+          <ProjectCard 
+            title="Counter App"
+            technologies="React,Vite"
+            description="Counter App is a React-based web application that allows users to perform multiple operations on a counter such as increment, decrement, multiply, divide, square, cube, and reset.This project demonstrates the use of React core concepts including state management (useState) and event handling.The application provides real-time updates with a simple and user-friendly interface.It helped me strengthen my understanding of React fundamentals and component-based development."
+            image={counter}
+            liveLink="https://counterapp-weld.vercel.app/"
+            codeLink="https://github.com/yashk20030615/Counterapp.git"
+            handleRedirect={handleRedirect} />
           {/*=================PROJECT 4=====================*/}
           <ProjectCard
             title="QuickCart"
