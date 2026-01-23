@@ -6,6 +6,7 @@ import quickcart from "../assets/quickcart.png";
 import loginsignup from "../assets/loginsignup.png";
 import loginsignupmern from "../assets/loginsignupmern.png";
 import counter from "../assets/counter.png";
+import library from "../assets/Library_mgmt_system.png";
 const Projects = () => {
   const handleRedirect = async(url)=>{
     try{
@@ -102,10 +103,19 @@ const Projects = () => {
             technologies="React.js, Express.js, Node.js & Mongo.db "
             description="Developed a full-stack MERN authentication system implementing secure user signup and login using JWT (JSON Web Token) authentication. The application uses token-based authorization to protect routes and manage user sessions. The React frontend is deployed on Vercel, while the Node.js and Express backend with MongoDB is hosted on Render, following real-world production deployment practices."
             image={loginsignupmern}
-            liveLink="https://login-signup-mern-b3tn3p1td-yash-kumar-gandhirs-projects.vercel.app/"
+            liveLink="https://login-signup-mern-gamma.vercel.app/"
             codeLink="https://github.com/yashk20030615/Login-Signup-Mern.git"
             handleRedirect={handleRedirect}
             />
+          <ProjectCard 
+            title="Library Management System"
+            technologies="React.js,Node.js,Express.js,MongoDb,Axios"
+            description=""
+            image={library}
+            liveLink=""
+            codeLink=""
+            handleRedirect={handleRedirect}
+            />           
       </div>
     </section>
   );

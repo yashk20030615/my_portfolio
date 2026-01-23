@@ -1,23 +1,25 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+
 const Home = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
     <section
       style={{
-        minHeight: "100vh",
-        position: "relative",
-        overflow: "hidden",
-        background:
-          "linear-gradient(135deg, #020617 0%, #020617 40%, #020617 100%)",
+        minHeight: "calc(100vh - 70px)",
+        paddingTop: "70px",
+        background: "#020617",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         padding: "0 24px",
         color: "#f8fafc",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      {/* Gradient blobs */}
+      {/* Glow */}
       <div
         style={{
           position: "absolute",
@@ -26,43 +28,19 @@ const Home = () => {
           width: "500px",
           height: "500px",
           background:
-            "radial-gradient(circle at center, rgba(56,189,248,0.45), transparent 65%)",
+            "radial-gradient(circle, rgba(56,189,248,0.45), transparent 60%)",
           filter: "blur(120px)",
         }}
       />
 
-      <div
-        style={{
-          position: "absolute",
-          bottom: "-200px",
-          right: "-150px",
-          width: "500px",
-          height: "500px",
-          background:
-            "radial-gradient(circle at center, rgba(168,85,247,0.45), transparent 65%)",
-          filter: "blur(140px)",
-        }}
-      />
-
-      {/* Content */}
-      <div
-        style={{
-          maxWidth: "900px",
-          width: "100%",
-          textAlign: "center",
-          position: "relative",
-          zIndex: 2,
-        }}
-      >
+      <div style={{ textAlign: "center", maxWidth: "900px" }}>
         <motion.h1
-          initial={{ opacity: 0, y: 60 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           style={{
-            fontSize: "3.8rem",
+            fontSize: "3.5rem",
             fontWeight: 800,
-            letterSpacing: "-1.5px",
-            lineHeight: 1.1,
             marginBottom: "24px",
           }}
         >
@@ -74,58 +52,31 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
           style={{
-            fontSize: "1.15rem",
             color: "#cbd5f5",
-            maxWidth: "680px",
-            margin: "0 auto 48px",
+            maxWidth: "700px",
+            margin: "0 auto 40px",
             lineHeight: 1.7,
           }}
         >
-        I design and develop modern, scalable web applications using the MERN stack, combining clean code practices, performance optimization, and thoughtful UI/UX to deliver reliable and impactful digital experiences.
-
+          I design and develop modern, scalable web applications using the MERN
+          stack with clean code, performance optimization, and beautiful UI/UX.
         </motion.p>
 
-        {/* Single Explore More button */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.8 }}
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          onClick={() => navigate("/about")}
           style={{
-            display: "flex",
-            justifyContent: "center",
-            flexWrap: "wrap",
+            padding: "14px 36px",
+            borderRadius: "999px",
+            background: "linear-gradient(135deg,#38bdf8,#a855f7)",
+            border: "none",
+            color: "#020617",
+            fontWeight: "600",
+            cursor: "pointer",
           }}
         >
-          <button
-            style={{
-              padding: "14px 36px",
-              borderRadius: "999px",
-              background:
-                "linear-gradient(135deg, #38bdf8, #a855f7)",
-              color: "#020617",
-              fontWeight: 600,
-              fontSize: "15px",
-              border: "none",
-              cursor: "pointer",
-              transition: "transform 0.3s, box-shadow 0.3s",
-              boxShadow:
-                "0 12px 40px rgba(56,189,248,0.35)",
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.transform = "translateY(-4px)";
-              e.target.style.boxShadow =
-                "0 18px 50px rgba(168,85,247,0.45)";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.transform = "translateY(0)";
-              e.target.style.boxShadow =
-                "0 12px 40px rgba(56,189,248,0.35)";
-            }}
-            onClick={() => navigate("/about")}
-          >
-            Explore More
-          </button>
-        </motion.div>
+          Explore More
+        </motion.button>
       </div>
     </section>
   );

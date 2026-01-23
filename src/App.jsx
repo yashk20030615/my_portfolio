@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Loader from "./Components/Loader";
+import ScrollToTop from "./Components/ScrollToTop";
+
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Project";
@@ -15,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 sec delay
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -37,7 +40,9 @@ const App = () => {
 
   return (
     <Router>
+      <ScrollToTop /> {/* 🔥 THIS FIXES THE PROBLEM */}
       <Navbar />
+
       <div style={{ paddingTop: "78px", minHeight: "calc(100vh - 78px)" }}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -47,6 +52,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+
       <Footer />
     </Router>
   );

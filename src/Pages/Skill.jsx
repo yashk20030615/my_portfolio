@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import cLogo from "../assets/C.jpg";
-import javaLogo from "../assets/java.png";
+// import javaLogo from "../assets/java.png";
 import htmlLogo from "../assets/html.png";
 import cssLogo from "../assets/css.png";
 import jsLogo from "../assets/js.png";
@@ -13,7 +13,7 @@ import gitLogo from "../assets/git.jpg";
 import mysql from "../assets/mysql.png";
 const skills = [
   { name: "C Programming", level: 75, logo: cLogo },
-  { name: "Java", level: 70, logo: javaLogo },
+  // { name: "Java", level: 70, logo: javaLogo },
   { name: "HTML", level: 90, logo: htmlLogo },
   { name: "CSS", level: 85, logo: cssLogo },
   { name: "JavaScript", level: 80, logo: jsLogo },

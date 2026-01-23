@@ -67,6 +67,12 @@ const About = () => {
               <strong>Full Name:</strong> Yash Kumar Gandhir
             </p>
             <p style={{ margin: "6px 0" }}>
+              <strong>Father's Name:</strong> Sanjeev
+            </p>
+            <p style={{ margin: "6px 0" }}>
+              <strong>Mother's Name:</strong> Rajni
+            </p>
+            <p style={{ margin: "6px 0" }}>
               <strong>Date of Birth:</strong> 15 June 2003
             </p>
             <p style={{ margin: "6px 0" }}>
@@ -100,7 +106,7 @@ const About = () => {
         </motion.div>
 
         {/* 2️⃣ Family Background */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -134,17 +140,14 @@ const About = () => {
           >
             I come from a close-knit family of four members, where values like hard work, discipline, respect, and mutual support have always been deeply rooted. My family has played a vital role in shaping my personality, encouraging me to stay focused on my education and career goals. Their constant motivation and guidance have helped me grow not only academically but also as a responsible and confident individual.
 
-          </p>
-
-          {/* Grid container for members */}
-          <div
+          </p> */}
+          {/* <div
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
               gap: "20px",
             }}
           >
-            {/* Father */}
             <motion.div
               whileHover={{ scale: 1.03 }}
               style={{
@@ -163,7 +166,6 @@ const About = () => {
               <p>Mother: Lt. Bhagwanti Gandhir</p>
             </motion.div>
 
-            {/* Mother */}
             <motion.div
               whileHover={{ scale: 1.03 }}
               style={{
@@ -181,8 +183,6 @@ const About = () => {
               <p>Father: Shri Gobind Lal Bareja</p>
               <p>Mother: Shrimati Praveen Bareja</p>
             </motion.div>
-
-            {/* Sister */}
             <motion.div
               whileHover={{ scale: 1.03 }}
               style={{
@@ -199,8 +199,6 @@ const About = () => {
               <p>Currently pursuing Bachelor's in Interior Designing</p>
               <p>DOB: 07/08/2006</p>
             </motion.div>
-
-            {/* Myself */}
             <motion.div
               whileHover={{ scale: 1.03 }}
               style={{
@@ -218,7 +216,7 @@ const About = () => {
               <p>DOB: 15/06/2003</p>
             </motion.div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* 3️⃣ Education Section */}
         <motion.div
