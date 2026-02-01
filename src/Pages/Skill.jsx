@@ -11,18 +11,20 @@ import expressLogo from "../assets/express.png";
 import mongoLogo from "../assets/mongo.png";
 import gitLogo from "../assets/git.jpg";
 import mysql from "../assets/mysql.png";
+import python from "../assets/python.png"
 const skills = [
-  { name: "C Programming", level: 75, logo: cLogo },
+  { name: "C Programming", level: 95, logo: cLogo },
   // { name: "Java", level: 70, logo: javaLogo },
   { name: "HTML", level: 90, logo: htmlLogo },
   { name: "CSS", level: 85, logo: cssLogo },
-  { name: "JavaScript", level: 80, logo: jsLogo },
+  { name: "JavaScript", level: 90, logo: jsLogo },
   { name: "React.js", level: 75, logo: reactLogo },
-  { name: "Node.js", level: 70, logo: nodeLogo },
-  { name: "Express.js", level: 70, logo: expressLogo },
-  { name: "MongoDB", level: 65, logo: mongoLogo },
+  { name: "Node.js", level: 75, logo: nodeLogo },
+  { name: "Express.js", level: 75, logo: expressLogo },
+  { name: "MongoDB", level: 70, logo: mongoLogo },
   { name: "Git & GitHub", level: 75, logo: gitLogo },
-  { name: "MySQL" , level:80 , logo:mysql},
+  { name: "MySQL" , level:70 , logo:mysql},
+  { name: "Python" ,level:20, logo:python}
 ];
 
 const Skills = () => {

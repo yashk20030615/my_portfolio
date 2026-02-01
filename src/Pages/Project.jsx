@@ -110,10 +110,10 @@ const Projects = () => {
           <ProjectCard 
             title="Library Management System"
             technologies="React.js,Node.js,Express.js,MongoDb,Axios"
-            description=""
+            description="A full-stack web application to manage authors and books with complete CRUD operations. Features include adding, updating, searching, and displaying authors and their books with a clean and responsive UI."
             image={library}
-            liveLink=""
-            codeLink=""
+            liveLink="https://library-management-system-ten-zeta.vercel.app/"
+            codeLink="https://github.com/yashk20030615/Library_Management_System.git"
             handleRedirect={handleRedirect}
             />           
       </div>

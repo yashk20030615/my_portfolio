@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <Router>
-      <ScrollToTop /> {/* 🔥 THIS FIXES THE PROBLEM */}
+      <ScrollToTop /> 
       <Navbar />
 
       <div style={{ paddingTop: "78px", minHeight: "calc(100vh - 78px)" }}>
