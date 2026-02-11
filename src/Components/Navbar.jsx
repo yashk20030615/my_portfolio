@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import resumePDF from "../assets/Resume-Yash_Kumar[Latest].pdf";
+import resumePDF from "../assets/Resume-Yash Kumar[Latest].pdf";
 import "./Navbar.css";
 
 const Navbar = () => {
